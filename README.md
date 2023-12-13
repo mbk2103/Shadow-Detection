@@ -33,6 +33,7 @@ Uncomment the cv2.imshow lines in the script if you want to display the images.
 ## Reference
 Mean Shift Ve Gaussian Filtre İle Gölge Tespiti
 Shadow Detection With Mean Shift And Gaussian Filter
+
 URL: https://www.emo.org.tr/ekler/0e5c6bf778d4a21_ek.pdf
 
 
