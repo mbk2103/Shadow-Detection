@@ -20,14 +20,23 @@ This Python script implements shadow detection using mean shift and Gaussian fil
 The script will process the input image and save the following images:
 
 input_image.jpg
+
 blurred_image.jpg
+
 meanshift_image.jpg
+
 morphology_image.jpg
+
 gray_image.jpg
+
 thresholded_image.jpg
+
 edges.jpg
+
 dilated_edges.jpg
+
 result_image.jpg
+
 
 Uncomment the cv2.imshow lines in the script if you want to display the images.
 
