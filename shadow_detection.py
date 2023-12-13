@@ -4,7 +4,7 @@ import numpy as np
 
 def main():
     # Step 1: Read input image
-    input_image = cv2.imread('/content/drive/MyDrive/FiltersForObjectDetection/shadows/images1.jpg')
+    input_image = cv2.imread('path/to/image/here/.jpg')
 
     # Step 2: Apply Gaussian filter
     blurred_image = cv2.GaussianBlur(input_image, (3, 3), 0)
