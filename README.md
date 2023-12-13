@@ -28,6 +28,7 @@ thresholded_image.jpg
 edges.jpg
 dilated_edges.jpg
 result_image.jpg
+
 Uncomment the cv2.imshow lines in the script if you want to display the images.
 
 ## Reference
