@@ -10,7 +10,7 @@ def display_image(title, image):
 
 def main():
     # Step 1: Read input image
-    input_image = cv2.imread('/content/drive/MyDrive/FiltersForObjectDetection/shadows/images1.jpg')
+    input_image = cv2.imread('input/path/to/here.jpg')
 
     # Step 2: Apply Gaussian filter
     blurred_image = cv2.GaussianBlur(input_image, (3, 3), 0)
@@ -80,10 +80,10 @@ def main():
     display_image('Final Result', result_image)
 
     # Save the result image
-    cv2.imwrite('/content/drive/MyDrive/FiltersForObjectDetection/shadows/images1-removal.jpg', result_image)
+    cv2.imwrite('output/path/to/here.jpg', result_image)
 
     # Load the image for histogram analysis
-    image = cv2.imread('/content/drive/MyDrive/FiltersForObjectDetection/shadows/images1-removal.jpg', cv2.IMREAD_GRAYSCALE)
+    image = cv2.imread('output/path/to/here/.jpg', cv2.IMREAD_GRAYSCALE)
 
     # Calculate histogram
     histogram, bins = np.histogram(image.flatten(), bins=256, range=[0, 256])
@@ -97,7 +97,7 @@ def main():
     plt.show()
 
     # Load the original image for histogram analysis
-    image2 = cv2.imread('/content/drive/MyDrive/FiltersForObjectDetection/shadows/images1.jpg', cv2.IMREAD_GRAYSCALE)
+    image2 = cv2.imread('input/path/to/here.jpg', cv2.IMREAD_GRAYSCALE)
 
     # Calculate histogram
     histogram2, bins2 = np.histogram(image2.flatten(), bins=256, range=[0, 256])
